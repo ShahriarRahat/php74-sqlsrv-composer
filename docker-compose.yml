@@ -1,0 +1,15 @@
+version: '3.8'
+
+  php74mssql:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    # image: kooldev/php:7.4-nginx-sqlsrv
+    container_name: php74mssql
+    ports:
+      - "8080:80"
+    networks:
+      - php74mssql-network
+
+networks:
+  php74mssql-network:
