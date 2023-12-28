@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 
 LABEL org.opencontainers.image.authors="Shahriar Rahat <shahriarrahat@outlook.com>"
 LABEL version="1.0"
-LABEL description="This is a PHP-7.4 image with sqlsrv and pdo_sqlsrv extensions along with composer and mssql-tools18. The aim of this image is to provide a easy environment to work with Laravel. "
+LABEL description="This is a PHP-7.4 image with sqlsrv and pdo_sqlsrv extensions along with composer and mssql-tools18. The aim of this image is to provide a easy environment to work with SQLSRV & PDO-SQLSRV extension for PHP & also extending it with whatever the user needs."
 
 RUN apt-get update 
 RUN apt-get install -y apt-transport-https ca-certificates curl
